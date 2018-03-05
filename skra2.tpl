@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Midannarverkefni</title>
-	<link rel="stylesheet" type="text/css" href="/Myndir/css.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
 	<meta charset="utf-8">
 </head>
 <body>
