@@ -12,9 +12,9 @@ div{
 	}
 h1{text-align: center;}
 body {
-	background-color: red;
+	background-color: grey;
 	width: 1250px;
-	margin-left: 500px;
+	margin-left: 400px;
 	text-align: center;
 	}
-img{height:70px;width:70px;}
+img{height:50px;width:50px;}
