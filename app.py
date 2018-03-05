@@ -9,8 +9,21 @@ with urllib.request.urlopen("http://apis.is/petrol") as url:
 
 @route('/')
 def index():
-    return template("skra1.tpl", data=data)
+    return template("skra1.tpl", data=data,)
 
-#run()
-run(host='0.0.0.0',port=os.environ.get('PORT'))
+
+@route('/company/<name>')
+def index(name):
+    strCompanyMin = ""
+    dblCompanyMin = 1000.0
+
+    for i in data['results']:
+        if dblCompanyMin > float(i['bensin95']):
+            dblCompanyMin = i['bensin95']
+            strCompanyMin = i['company']
+    return template("skra2.tpl", data=data, dblCompanyMin=dblCompanyMin, strCompanyMin=strCompanyMin,name=name)
+
+
+run()
+
 """"""
