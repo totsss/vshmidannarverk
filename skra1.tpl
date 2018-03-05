@@ -29,7 +29,7 @@ listi = sorted(listi)
 %print(listi)
 <table>
 %for i in listi:
-    <tr><td><a href="/comp/{{i}}">{{i}}</a></td></tr>
+    <tr><td><a href="/company/{{i}}">{{i}}</a></td></tr>
 %end
 </table>
 
