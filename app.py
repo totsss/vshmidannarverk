@@ -1,5 +1,7 @@
+import os
 from bottle import *
 import urllib.request, json
+
 @route('/static/<nafn>')
 def static(nafn):
     return static_file(nafn,root='./static')
@@ -24,6 +26,7 @@ def index(name):
     return template("skra2.tpl", data=data, dblCompanyMin=dblCompanyMin, strCompanyMin=strCompanyMin,name=name)
 
 
-run()
+#run()
+run(host='0.0.0.0',port=os.environ.get('PORT'))
 
 """"""
