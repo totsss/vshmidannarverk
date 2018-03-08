@@ -27,7 +27,7 @@ def index(name):
 
 @error(404)
 def error404(error):
-    return """villa hefur komid upp"
+    return """villa hefur komid upp"""
 
 
 #run()
