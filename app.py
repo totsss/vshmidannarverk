@@ -25,6 +25,10 @@ def index(name):
             strCompanyMin = i['company']
     return template("skra2.tpl", data=data, dblCompanyMin=dblCompanyMin, strCompanyMin=strCompanyMin,name=name)
 
+@error(404)
+def error404(error):
+    return """villa hefur komid upp"
+
 
 #run()
 run(host='0.0.0.0',port=os.environ.get('PORT'))
